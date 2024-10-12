@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bruuh</title>
+        <style>
+            .dropdown{
+                display: inline-block;
+            }
+            .dropdown button{
+                background-color: blue;
+                color: aqua;
+              padding: 10px 15px;
+              border: none;
+              cursor: pointer;
+            }
+            .dropdown a{
+               display: block;
+               color: black;
+               text-decoration: none;
+               padding: 10px 15px;
+               
+            }
+            .dropdown .content{
+                display: none;
+                background-color: blueviolet;
+               position: absolute;
+               min-width: 100px;
+               box-shadow: 2px 2px 5px black;
+
+            }
+            .dropdown:hover .content{
+                display: block;
+            }
+            .dropdown:hover button{
+                background-color: red;
+            }
+             .dropdown a:hover{
+                background-color: brown;
+             }
+
+
+
+
+        </style>
+    </head>
+    <body>
+         <div class="dropdown">
+            <button>Country</button>
+            <div class="content">
+                <a href="">Japan</a>
+                <a href="">Singapore</a>
+                <a href="">Indonesia</a>
+            
+            </div>
+         </div>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro officiis quo veritatis, odit vitae commodi blanditiis illum ipsa, distinctio soluta, eligendi repellendus aut numquam obcaecati culpa dolorem non suscipit fugiat!</p> 
+    </body>
+</html>
