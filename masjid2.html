@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="420" height="400" style="border:1px solid #0000;">
+        
+        </canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var D = canvas.getContext("2d");
+            D.fillStyle = "blue";
+            D.fillRect(0, 0, canvas.width, canvas.height);
+            
+            
+            
+
+// Menggambar dasar masjid
+D.fillStyle = 'rgb(9, 185, 85)'; // Warna coklat untuk dasar
+D.fillRect(100, 200, 200, 100); // Persegi panjang untuk dasar
+
+// Menggambar kubah masjid
+D.beginPath();
+D.arc(200, 200, 100, 0, Math.PI, true); // Lingkaran setengah untuk kubah
+D.fillStyle = '#FFD700'; // Warna emas untuk kubah
+D.fill();
+//bulan
+
+D.beginPath();
+D.arc(170, 40, 40, 0,  Math.PI*2); 
+D.fillStyle = '#FFD700'; 
+D.fill();
+//
+D.fillStyle = 'white';
+D.beginPath();
+D.moveTo(0,50)
+D.bezierCurveTo(100,20,40,10,70,10);
+D.bezierCurveTo(200,70,360,-50,400,70);
+
+D.stroke();
+D.fill();
+//
+D.fillStyle = 'white';
+D.fillRect(65, 90, 40, 10); 
+// Menggambar menara kiri
+D.fillStyle = 'rgb(10, 211, 229)'; // Warna
+D.fillRect(70, 100, 30, 200); // Persegi panjang untuk menara kiri
+D.beginPath();
+D.arc(85, 90, 15, 0,  Math.PI,true); // Lingkaran untuk puncak menara kiri
+D.fillStyle = '#FFD700'; // Warna emas untuk puncak menara
+D.fill();
+//
+D.fillStyle = 'white'; 
+D.fillRect(295, 90, 40, 10); 
+// Menggambar menara kanan
+D.fillStyle = 'rgb(10, 211, 229)'; // warna
+D.fillRect(300, 100, 30, 200); // Persegi panjang menara kanan
+D.beginPath();
+D.arc(315, 90, 15, 0, Math.PI, true); // Lingkaran untuk puncak menara kanan
+D.fillStyle = '#FFD700'; // Warna emas untuk puncak menara
+D.fill();
+
+// Gambar badan pintu
+        D.fillStyle = 'black'; // Warna coklat untuk pintu
+        D.fillRect(180, 240, 40, 60);
+
+//jendela
+            D.strokeStyle = 'gray'
+            D.strokeRect (110,210,40,50);
+            D.fillStyle = 'black'
+            D.fillRect (110,210,40,50) ;
+            //
+            D.strokeStyle = 'gray'
+            D.strokeRect (250,210,40,50);
+            D.fillStyle = 'black'
+            D.fillRect (250,210,40,50) ;
+            //
+            D.fillStyle = 'white'; 
+            D.fillRect(70, 300, 260, 10);
+            //
+            D.fillStyle = 'white'; 
+            D.fillRect(60, 310, 280, 10);
+            //
+            D.fillStyle = 'white';
+            D.fillRect(50, 320, 300, 10);
+
+       
+            
+
+
+        </script>
+</body>
+</html>
